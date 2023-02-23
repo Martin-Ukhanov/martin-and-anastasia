@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martin & Anastasia</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="min-w-[300px] font-montserrat bg-white text-black">
+    <!-- Header -->
+    <header
+      class="fixed w-full min-w-[300px] p-8 flex justify-between items-center bg-black text-white z-10 transition-transform duration-500">
+      <a href="" class="text-5xl font-tangerine">M & A</a>
+      <nav class="hidden lg:flex items-center gap-x-8">
+        <a href="#home" class="group">
+          Home
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#our-story" class="group">
+          Our Story
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#venue" class="group">
+          Venue
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#schedule" class="group">
+          Schedule
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#q-&-a" class="group">
+          Q & A
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#rsvp" class="group">
+          RSVP
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+      </nav>
+      <button id="open-menu-btn" class="lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="w-10 fill-white">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </button>
+    </header>
+    <!-- Menu -->
+    <menu
+      class="lg:hidden fixed top-0 left-0 w-full h-full translate-x-full flex justify-center items-center bg-black z-20 transition duration-500">
+      <button id="close-menu-btn" class="absolute top-8 right-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="w-10 fill-white">
+          <path
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+        </svg>
+      </button>
+      <nav class="flex flex-col items-center gap-y-8 text-white">
+        <a href="#home" class="group">
+          Home
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#our-story" class="group">
+          Our Story
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#venue" class="group">
+          Venue
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#schedule" class="group">
+          Schedule
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#q-&-a" class="group">
+          Q & A
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+        <a href="#rsvp" class="group">
+          RSVP
+          <span
+            class="block w-0 group-hover:w-full h-0.5 transition-all duration-500 bg-white"></span>
+        </a>
+      </nav>
+    </menu>
+    <!-- Main -->
+    <main class="flex flex-col items-center">
+      <!-- Home -->
+      <section
+        id="home"
+        class="relative w-full max-w-[2000px] flex justify-center items-center">
+        <img
+          src="./images/home.jpg"
+          alt="Home"
+          class="w-full min-h-[800px] object-cover" />
+        <div class="absolute top-0 left-0 w-full h-full bg-black/70"></div>
+        <div class="absolute px-8 flex flex-col gap-y-4 text-center text-white">
+          <h1 class="text-7xl md:text-8xl lg:text-9xl font-tangerine drop">
+            Martin & Anastasia
+          </h1>
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-tangerine drop">
+            Saturday, July 1st, 2023
+          </h2>
+          <h3 id="countdown" class="md:text-lg lg:text-xl drop">
+            0 Days, 0 HOours, 0 Minutes, 0 Seconds
+          </h3>
+        </div>
+      </section>
+      <!-- Our Story -->
+      <section
+        id="our-story"
+        class="w-full max-w-[1500px] lg:w-3/4 px-8 py-16 flex flex-col gap-y-4 text-center">
+        <h2 class="text-6xl font-tangerine drop">Our Story</h2>
+        <p class="drop">
+          Martin & Anastasia were set up on a blind date by their two good
+          friends just at the beginning of 2022. They walked into it excited to
+          meet someone new but not thinking much of it. They hit it off right
+          away and from that point on they made a point to see each other as
+          often as they could when time wasn't taken up by school or work. They
+          often went on walks, cooked, listened to and made music, and talked
+          about their future. The thing that remained at the centre of it all
+          was their deep live and devotion for Christ which resulted in a deep
+          love and devotion for each other.
+        </p>
+        <p class="drop">
+          On January 21st 2023, Martin got down on one knee and asked Anastasia
+          a very important question. That day they chose to share a life
+          together rather than leading separate ones… they also decided to order
+          fried chicken sandwiches to celebrate. They are excited to spend the
+          rest of their lives together as they look forward to the years ahead.
+          They ask that you would continue to pray that God would remain at the
+          centre of their relationship as they look forward to marriage. That
+          each day, week, month and year would be devoted to serving Him in all
+          they say and do.
+        </p>
+        <p class="drop">
+          <span class="italic"
+            >"Trust in the Lord with all your heart, and do not lean on your own
+            understanding. In all your ways acknowledge him, and he will make
+            straight your paths" </span
+          >Proverbs 3:5-6.
+        </p>
+      </section>
+      <!-- Info -->
+      <section
+        class="w-full max-w-[2000px] px-8 flex flex-col md:flex-row gap-8">
+        <div
+          id="venue"
+          class="relative flex-1 flex justify-center items-center">
+          <img
+            src="./images/venue.jpg"
+            alt="Venue"
+            class="h-[500px] flex-1 object-cover rounded-lg" />
+          <div
+            class="absolute top-0 left-0 w-full h-full rounded-lg bg-black/70"></div>
+          <div
+            class="absolute p-8 flex flex-col items-center gap-y-4 text-center text-white">
+            <h2 class="text-6xl font-tangerine drop">Venue</h2>
+            <div class="drop">
+              <p class="font-bold">The Knox Wedding & Event Venue</p>
+              <p>Merrickville, Ontario, Canada</p>
+            </div>
+            <a
+              href="https://goo.gl/maps/V1FyALtfK797UXWG6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-4 border-2 rounded-lg text-xs font-bold hover:bg-white border-white hover:text-black transition-colors duration-500 drop">
+              View Map
+            </a>
+          </div>
+        </div>
+        <div
+          id="schedule"
+          class="relative flex-1 flex justify-center items-center">
+          <img
+            src="./images/schedule.jpg"
+            alt="Schedule"
+            class="h-[500px] flex-1 object-cover rounded-lg" />
+          <div
+            class="absolute top-0 left-0 w-full h-full rounded-lg bg-black/70"></div>
+          <div
+            class="absolute p-8 flex flex-col gap-y-4 text-center text-white drop">
+            <h2 class="text-6xl font-tangerine drop">Schedule</h2>
+            <div class="drop">
+              <h4 class="font-bold">1:30 PM</h4>
+              <p>Arrive</p>
+            </div>
+            <div class="drop">
+              <h4 class="font-bold">2:00 PM - 3:00 PM</h4>
+              <p>Ceremony</p>
+            </div>
+            <div class="drop">
+              <h4 class="font-bold">3:00 PM - 6:00 PM</h4>
+              <p>Eating, mingling, dancing, speeches, photos</p>
+            </div>
+            <div class="drop">
+              <h4 class="font-bold">6:00 PM</h4>
+              <p>Final prayer & send off</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Q & A -->
+      <section
+        id="q-&-a"
+        class="w-full max-w-[1500px] lg:w-3/4 px-8 py-16 flex flex-col items-center gap-y-4 drop">
+        <h2 class="text-6xl font-tangerine drop">Q & A</h2>
+        <div
+          class="question w-full p-4 border-2 rounded-lg border-black cursor-pointer drop">
+          <div class="flex justify-between items-center gap-x-4">
+            <h3 class="font-bold">Can I bring someone?</h3>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-8 fill-black transition-all duration-500">
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer max-h-0 overflow-hidden transition-all duration-500">
+            <div class="mt-2">
+              <p>
+                Unfortunately we will not be allowing plus-ones as we desire to
+                maintain a more intimate wedding feel.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="question w-full p-4 border-2 rounded-lg border-black cursor-pointer drop">
+          <div class="flex justify-between items-center gap-x-4">
+            <h3 class="font-bold">What should I wear?</h3>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-8 fill-black transition-all duration-500">
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer max-h-0 overflow-hidden transition-all duration-500">
+            <div class="mt-2">
+              <p>
+                The dress code is semi-formal. We request that everyone tries
+                their best to follow the color sheme of the wedding as shown
+                below.
+              </p>
+              <div
+                class="mt-4 flex flex-col min-[412px]:flex-row justify-center items-center gap-2">
+                <div class="flex gap-x-2 items-center">
+                  <a
+                    href="https://color-hex.org/color/662621"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 hover:w-14 hover:h-14 rounded-lg bg-[#662621] transition-all duration-500"
+                    title="Maroon"></a>
+                  <a
+                    href="https://color-hex.org/color/daacfa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 hover:w-14 hover:h-14 rounded-lg bg-[#daacfa] transition-all duration-500"
+                    title="Lavender"></a>
+                  <a
+                    href="https://color-hex.org/color/facfe6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 hover:w-14 hover:h-14 rounded-lg bg-[#facfe6] transition-all duration-500"
+                    title="Pink"></a>
+                </div>
+                <div class="flex gap-x-2 items-center">
+                  <a
+                    href="https://color-hex.org/color/faf496"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 hover:w-14 hover:h-14 rounded-lg bg-[#faf496] transition-all duration-500"
+                    title="Pastel Yellow"></a>
+                  <a
+                    href="https://www.color-hex.com/color/cc3806"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 hover:w-14 hover:h-14 rounded-lg bg-[#cc3806] transition-all duration-500"
+                    title="Cinnamon"></a>
+                  <a
+                    href="https://www.color-hex.com/color/000000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 hover:w-14 hover:h-14 rounded-lg bg-black transition-all duration-500"
+                    title="Black"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="question w-full p-4 border-2 rounded-lg border-black cursor-pointer drop">
+          <div class="flex justify-between items-center gap-x-4">
+            <h3 class="font-bold">
+              Where can I stay if I don't live in the area?
+            </h3>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-8 fill-black transition-all duration-500">
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer max-h-0 overflow-hidden transition-all duration-500">
+            <div class="mt-2">
+              <p>
+                There are many wonderful places to stay nearby, we have listed a
+                few different options below.
+              </p>
+              <div class="mt-4 flex flex-col gap-y-2 text-center">
+                <a
+                  href="https://www.merrickvillesuites.ca/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-4 border-2 rounded-lg text-xs font-bold hover:bg-black border-black hover:text-white transition-colors duration-500">
+                  Merrickville Guest Suites
+                </a>
+                <a
+                  href="https://www.enduringheartbnb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-4 border-2 rounded-lg text-xs font-bold hover:bg-black border-black hover:text-white transition-colors duration-500">
+                  Enduring Heart B&B
+                </a>
+                <a
+                  href="https://colonelsinn.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-4 border-2 rounded-lg text-xs font-bold hover:bg-black border-black hover:text-white transition-colors duration-500">
+                  Colonels Inn
+                </a>
+                <a
+                  href="https://www.tripadvisor.ca/Hotel_Review-g181758-d184056-Reviews-Comfort_Inn-Brockville_Ontario.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-4 border-2 rounded-lg text-xs font-bold hover:bg-black border-black hover:text-white transition-colors duration-500">
+                  Comfort Inn Brockville
+                </a>
+                <a
+                  href="https://www.airbnb.ca/s/Merrickville--Ontario--Canada/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&price_filter_input_type=0&price_filter_num_nights=5&query=Merrickville%2C%20ON&place_id=ChIJCZG4hu-QzUwRoC62oquIP7w&date_picker_type=flexible_dates&source=structured_search_input_header&search_type=filter_change&flexible_trip_lengths%5B%5D=weekend_trip"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-4 border-2 rounded-lg text-xs font-bold hover:bg-black border-black hover:text-white transition-colors duration-500">
+                  Airbnb
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="question w-full p-4 border-2 rounded-lg border-black cursor-pointer drop">
+          <div class="flex justify-between items-center gap-x-4">
+            <h3 class="font-bold">Is there a gift registry?</h3>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-8 fill-black transition-all duration-500">
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer max-h-0 overflow-hidden transition-all duration-500">
+            <div class="mt-2">
+              <p>
+                In lieu of traditional gifts we would be grateful for a monetary
+                gift or e-transfer at
+                <span class="break-all italic">martin.ukhanov@gmail.com</span>
+                to help us begin our lives together.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="question w-full p-4 border-2 rounded-lg border-black cursor-pointer drop">
+          <div class="flex justify-between items-center gap-x-4">
+            <h3 class="font-bold">
+              I have an unanswered question, where can I contact you?
+            </h3>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-8 fill-black transition-all duration-500">
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer max-h-0 overflow-hidden transition-all duration-500">
+            <div class="mt-2">
+              <p>
+                Please reach us at
+                <a
+                  href="mailto:martinandanastasia@gmail.com"
+                  class="break-all italic text-black/70 hover:text-black transition-colors duration-500"
+                  >martinandanastasia@gmail.com</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- RSVP -->
+      <section
+        id="rsvp"
+        class="relative w-full max-w-[2000px] flex justify-center items-center">
+        <img
+          src="./images/rsvp.jpg"
+          alt="RSVP"
+          class="w-full h-[600px] object-cover" />
+        <div class="absolute top-0 left-0 w-full h-full bg-black/70"></div>
+        <div
+          class="absolute w-full md:w-1/2 px-8 flex flex-col justify-center items-center gap-y-4 text-white">
+          <h2 class="text-6xl font-tangerine drop">RSVP</h2>
+          <form name="rsvp" class="w-full flex flex-col gap-y-4" netlify>
+            <input
+              type="text"
+              name="first-name"
+              placeholder="First Name"
+              required
+              class="p-4 border-2 rounded-lg outline-none bg-transparent border-white drop" />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Last Name"
+              required
+              class="p-4 border-2 rounded-lg outline-none bg-transparent border-white drop" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              class="p-4 border-2 rounded-lg outline-none bg-transparent border-white drop" />
+            <div class="drop">
+              <p class="font-bold">Will you be attending?</p>
+              <div class="mt-1 flex items-center gap-x-2">
+                <input
+                  type="radio"
+                  name="attending"
+                  id="yes"
+                  required
+                  class="accent-black" />
+                <label for="yes">Yes</label>
+              </div>
+              <div class="flex items-center gap-x-2">
+                <input
+                  type="radio"
+                  name="attending"
+                  id="no"
+                  class="accent-black" />
+                <label for="no">No</label>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="p-4 border-2 rounded-lg font-bold border-white hover:bg-white text-white hover:text-black transition-colors duration-500 drop">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="p-8 text-center bg-black text-white max-h-128">
+      <p>Created by Martin Ukhanov</p>
+    </footer>
+  </body>
+</html>
